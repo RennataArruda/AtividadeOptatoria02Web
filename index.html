@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade Optatória 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <main>
+        <h1>Cadastro</h1>
+        <form method="POST" action="https://confirmar.animavite.com/processa.php">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="label-form">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome"><br>
+                </div>
+                <div class="label-form">
+                    <label for="dt_nascimento">Data de Nascimento: </label>
+                    <input type="date" id="dt_nascimento" name="dt_nascimento"><br>
+                </div>
+                <div class="label-form">
+                    <label for="sexo">Sexo: </label>
+                    <input type="radio" id="feminino" name="sexo" value="F">
+                    <label for="html">Feminino</label>
+                    <input type="radio" id="masculino" name="sexo" value="M">
+                    <label for="css">Masculino</label>
+                </div>
+            </fieldset> 
+            <fieldset>
+                <legend>Dados Gerais</legend>
+                <div class="label-form">
+                    <label for="satisfacao">Satisfação: </label>
+                    <input type="range" id="satisfacao" name="satisfacao"><br>
+                </div>
+                <div class="label-form">
+                    <label for="foto">Foto de Perfile: </label>
+                    <input type="file" id="foto" name="foto"><br>
+                </div>
+                <div class="label-form">
+                    <label for="musical">Preferência Musical: </label>
+                    <input type="checkbox" id="musical01" name="musical01" value="rock">
+                    <label for="vehicle1"> Rock</label>
+                    <input type="checkbox" id="musical02" name="musical02" value="pop">
+                    <label for="vehicle2"> POP</label>
+                    <input type="checkbox" id="musical03" name="musical03" value="eletronica">
+                    <label for="vehicle3"> Eletrônica</label>
+                    <input type="checkbox" id="musical04" name="musical04" value="sertanejo">
+                    <label for="vehicle3"> Sertanejo</label>
+                </div>
+                <div class="label-form">
+                    <label for="comentario">Comentário</label><br>
+                    <textarea name="comentario" id="comentario" rows="6" style="width: 100%;"></textarea>
+                </div>
+            </fieldset> 
+            <div class="submit">
+                <input type="submit" name="Enviar">
+            </div>
+        </form>
+    </main>    
+</body>
+</html>
